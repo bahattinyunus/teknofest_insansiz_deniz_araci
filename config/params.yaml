@@ -1,0 +1,21 @@
+# Project Aegis: System Parameters
+
+perception:
+    camera:
+        model: "ZED2i"
+        resolution: [1280, 720]
+        framerate: 30
+    lidar:
+        model: "RPLidar A3"
+        range: 25.0
+        angle_min: 0.0
+        angle_max: 360.0
+
+navigation:
+    algorithm: "A*"
+    max_velocity: 1.5 # m/s
+    safety_margin: 0.5 # meters
+
+control:
+    pid_thrust: [0.8, 0.1, 0.05]
+    pid_yaw: [1.2, 0.2, 0.1]
